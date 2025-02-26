@@ -6,16 +6,18 @@ L.control.zoom({ position: 'bottomright' }).addTo(map);
 
 // Base layer (peta dasar)
 var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 22,
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 // Base layer: Google Satellite
 var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'], // Subdomain Google
+    maxZoom: 22,
     attribution: '© Google Maps'
 });
 // Base layer: Google Hybrid (cek ulang)
 var googleHybrid = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
-    maxZoom: 20,
+    maxZoom: 22,
     attribution: 'Google Maps'
 });
 
