@@ -7,7 +7,7 @@ body {
 }
 
 #map {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: absolute; /* Pastikan peta penuh di layar */
     top: 0;
