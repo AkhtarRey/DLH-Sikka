@@ -1,5 +1,3 @@
-var API_KEY = "AIzaSyA8gRUsHKHrH2FXot1-OBBnTGMXmTOYxNE";
-
 // Initialize the map centered on Kabupaten Sikka (approx coordinates)
 var map = L.map('map', { zoomControl: false, attributionControl: false }).setView([-8.6233, 122.2167], 15); // Adjust latitude/longitude and zoom as needed
 
