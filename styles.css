@@ -3,11 +3,44 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: #1F5A3A; /* Hijau tua DLH sebagai background body */
+    overflow: hidden; /* Hindari scroll tak perlu */
 }
 
 #map {
     height: 100vh;
     width: 100%;
+    position: absolute; /* Pastikan peta penuh di layar */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Responsive untuk mobile */
+@media screen and (max-width: 768px) {
+    .info.legend {
+        padding: 5px; /* Kurangi padding di mobile */
+        font-size: 12px; /* Text lebih kecil */
+        width: auto; /* Pastikan ga terlalu lebar */
+        max-width: 200px; /* Batas lebar legenda */
+    }
+
+    .info.legend h4 {
+        font-size: 14px;
+    }
+
+    .info.legend h5 {
+        font-size: 10px;
+    }
+
+    .leaflet-control-layers {
+        padding: 5px; /* Kurangi padding */
+        max-width: 200px; /* Batas lebar layer control */
+    }
+
+    .leaflet-control-layers label {
+        font-size: 12px; /* Text lebih kecil di mobile */
+    }
 }
 
 .info.legend {
