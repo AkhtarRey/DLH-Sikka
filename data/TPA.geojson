@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "TPA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "TPA (Tempat Pembuangan Akhir)", "FolderPath": "Temporary Places/Kontainer.kmz/Kontainer", "SymbolID": 0, "AltMode": -1, "Base": 0.0, "Snippet": null, "PopupInfo": null, "HasLabel": -1, "LabelID": 0, "Kondisi": "Normal" }, "geometry": { "type": "Point", "coordinates": [ 122.121739681, -8.548653687999945, 0.0 ] } }
+]
+}
